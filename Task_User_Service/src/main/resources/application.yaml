@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:5001}
+  port: ${PORT:8080}
 spring:
   application:
     name: task-user-service
@@ -22,5 +22,6 @@ eureka:
     prefer-ip-address: false
     hostname: ${RAILWAY_PUBLIC_DOMAIN}
     secure-port-enabled: true
+    secure-port: 443
     non-secure-port-enabled: true
     

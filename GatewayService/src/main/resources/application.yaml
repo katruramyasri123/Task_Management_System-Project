@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:5000}
+  port: ${PORT:8080}
 
 spring:
   application:
@@ -56,4 +56,5 @@ eureka:
       defaultZone: ${EUREKA_URL}
       hostname: ${RAILWAY_PUBLIC_DOMAIN}
       secure-port-enabled: true
+      secure-port: 443
       non-secure-port-enabled: true
