@@ -10,6 +10,8 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: ""
   server:
     enable-self-preservation: false
     
