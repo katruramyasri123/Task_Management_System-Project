@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.rgukt.in.clientsDto.TaskDto;
 
-@FeignClient(name="task-service" ,url="http://localhost:5002", path="/api/tasks")
+@FeignClient(name="task-service" ,path="/api/tasks")
 public interface TaskClient {
 	@GetMapping("/{id}")
 	public TaskDto getTask(@PathVariable("id") Long id, @RequestHeader("Authorization") String authHeader) throws Exception;

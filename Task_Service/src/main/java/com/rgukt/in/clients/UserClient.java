@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.rgukt.in.clientsDto.UserDto;
 
-@FeignClient(name="User-Service",url="http://localhost:5001", path="/api/users")
+@FeignClient(name="task-user-service", path="/api/users")
 public interface UserClient {
 	@GetMapping("/profile")
 	public UserDto getUserProfile(@RequestHeader("Authorization") String authHeader) ;
